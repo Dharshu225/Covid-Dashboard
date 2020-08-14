@@ -22,17 +22,31 @@ if(isset($_POST["Submit"]))
     $state=$obj["Tamil Nadu"]["districtData"][$dist];
     // Loop through the object
         
-    $active=$state["active"];
-    $confirm=$state["confirmed"];
-    $death=$state["deceased"];
-    $recover=$state["recovered"];
+    $_SESSION["active"]=$state["active"];
+    $_SESSION["confirm"]=$state["confirmed"];
+    $_SESSION["death"]=$state["deceased"];
+    $_SESSION["recover"]=$state["recovered"];
 
-    $a_active=($active/$confirm)*360;
-    $a_recover=(($recover/$confirm)*360)+$a_active;
+    $active=$_SESSION["active"];
+    $confirm=$_SESSION["confirm"];
+    $death=$_SESSION["death"];
+    $recover=$_SESSION["recover"];
 
-    $b_active=($active/$confirm)*100;
-    $b_recover=($recover/$confirm)*100;
-    $b_death=($death/$confirm)*100;
+    $_SESSION["a_active"]=($active/$confirm)*360;
+    $a_active=$_SESSION["a_active"];
+    $_SESSION["a_recover"]=(($recover/$confirm)*360)+$a_active;
+    $a_recover=$_SESSION["a_recover"];
+
+    $_SESSION["b_active"]=($active/$confirm)*100;
+    $_SESSION["b_recover"]=($recover/$confirm)*100;
+    $_SESSION["b_death"]=($death/$confirm)*100;
+
+    $b_active=$_SESSION["b_active"];
+    $b_recover=$_SESSION["b_recover"];
+    $b_death=$_SESSION["b_death"];
+
+    $_SESSION["District"]=$dist;
+
 }
 
 ?>
@@ -45,6 +59,10 @@ if(isset($_POST["Submit"]))
 <title>District-Wise Cases</title>
 
 <style>
+
+body{
+  margin:2% auto auto;
+}
 
 .grid-container {
   display: grid;
@@ -116,7 +134,9 @@ if(isset($_POST["Submit"]))
 
 <body>
 <main>
+
 <div style="margin: auto auto auto 10%;">
+  <a href="download_img.php" style="float:right; font-size:18px;">Download as jpg</a>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST">
         <p style="font-size:23px;">Select District</p>
         <select name="dist" id="dist" style="font-size:15px;" required>
