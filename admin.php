@@ -27,13 +27,53 @@ if(isset($_POST["save"]))
 
 if(isset($_POST["delete"])) 
 {
-    $table = "user";
-    $where = "user_id =".$_POST["delete"];
-	$result = $dbb->Delete($table,$where);
-    if ($result) 
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "covid";
+
+	$conn = new mysqli($servername, $username, $password, $dbname);
+
+	$user_id=$_POST["delete"];
+	$sql="SELECT first_name, last_name,aadhar, email,mobile,age,gender,state,district,city,street,pin,passwordd,e_pass_requested,e_pass_accepted,e_pass_rejected,e_request_date,e_accept_date,e_reject_date,travel FROM user WHERE user_id ='$user_id'";
+	$res=mysqli_query($conn, $sql);
+	$row = mysqli_fetch_assoc($res);
+
+		$fname = $row["first_name"];
+		$lname = $row["last_name"];
+		$email = $row["email"];
+		$aadhar=$row["aadhar"];
+		$mob = $row["mobile"];
+		$age = $row["age"];
+		$gender = $row["gender"];
+		$state = $row["state"];
+		$district = $row["district"];
+		$city = $row["city"];
+		$street = $row["street"];
+		$pin= $row["pin"];
+		$psw = $row["passwordd"];
+		$pass_request=$row["e_pass_requested"];
+		$pass_accept=$row["e_pass_accepted"];
+		$pass_reject=$row["e_pass_rejected"];
+		$request_date=$row["e_request_date"];
+		$accept_date=$row["e_accept_date"];
+		$reject_date=$row["e_reject_date"];
+		$travel=$row["travel"];
+
+		$table = "inactive";
+        $columns = "first_name, last_name,aadhar, email,mobile,age,gender,state,district,city,street,pin,passwordd,e_pass_requested,e_pass_accepted,e_pass_rejected,e_request_date,e_accept_date,e_reject_date,travel";
+        $values = "'$fname','$lname','$aadhar','$email','$mob', '$age', '$gender', '$state','$district','$city','$street','$pin','$psw','$pass_request','$pass_accept','$pass_reject','$request_date','$accept_date','$reject_date','$travel'";
+		$insertOutput = $dbb->Insert($table,$columns,$values);
+
+	$sql1="DELETE FROM user WHERE user_id='$user_id'";
+	$res = mysqli_query($conn, $sql1);
+    if ($res) 
     {
-		$user_delete='User details has been deleted';
+		$user_delete='User details has been deleted successfully and Inserted to Inactive Users';
+		$table = "user";
+        $columns = "first_name, last_name,aadhar, email,mobile,age,gender,state,district,city,street,pin,passwordd,e_pass_requested,e_pass_accepted,e_pass_rejected,e_request_date,e_accept_date,e_reject_date,travel";
 		$result = $dbb->Select($table,$columns);
+		header("location:inactive.php");
     }
     else 
     {
@@ -95,6 +135,7 @@ if(isset($_POST["delete"]))
 			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
             <nav>
                 <a style="text-decoration:none;" href="front.php">Logout</a>
+				<a style="text-decoration:none;" href="inactive.php">Inactive Users</a>
 				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome Dharsh!!!"; ?></a>
             </nav>
 		</div>
@@ -133,7 +174,7 @@ if(isset($_POST["delete"]))
 				<th>E-pass Accepted Date</th>
 				<th>E-pass Declined Date</th>
 				<th>Last Travel</th>
-				<th>Cancel</th>
+				<th>Remove</th>
 			</tr>
 			<tr>
 				<?php
@@ -161,7 +202,7 @@ if(isset($_POST["delete"]))
 					echo "<td>" .$result[$index]["e_accept_date"]. "</td>";
 					echo "<td>" .$result[$index]["e_reject_date"]. "</td>";
 					echo "<td>" .$result[$index]["travel"]. "</td>";
-					echo "<td><button type='submit' name ='delete' class = 'btn btn-danger deletebutton' value='".$result[$index]["user_id"]."'>Cancel</button></td>";
+					echo "<td><button type='submit' name ='delete' class = 'btn btn-danger deletebutton' value='".$result[$index]["user_id"]."'>Remove</button></td>";
 					echo "</tr>";
 					}
 				?>
