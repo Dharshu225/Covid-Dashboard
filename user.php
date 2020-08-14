@@ -2,6 +2,7 @@
 session_start();
 include "includes/user_headfoot.php";
 
+$active=0;
 $confirm=0;
 $death=0;
 $recover=0;
@@ -13,19 +14,31 @@ $json=file_get_contents("https://api.covidindiatracker.com/state_data.json");
 $obj = json_decode($json,true);
 foreach($obj as $key){
     if($key["state"]=="Tamil Nadu"){
-        $active=$key["active"];
-        $confirm=$key["confirmed"];
-        $death=$key["deaths"];
-        $recover=$key["recovered"];
+      $_SESSION["active"]=$key["active"];
+      $_SESSION["confirm"]=$key["confirmed"];
+      $_SESSION["death"]=$key["deaths"];
+      $_SESSION["recover"]=$key["recovered"];
     }
 }
+$active=$_SESSION["active"];
+$confirm=$_SESSION["confirm"];
+$death=$_SESSION["death"];
+$recover=$_SESSION["recover"];
 
-$a_active=($active/$confirm)*360;
-$a_recover=(($recover/$confirm)*360)+$a_active;
+$_SESSION["a_active"]=($active/$confirm)*360;
+$a_active=$_SESSION["a_active"];
+$_SESSION["a_recover"]=(($recover/$confirm)*360)+$a_active;
+$a_recover=$_SESSION["a_recover"];
 
-$b_active=($active/$confirm)*100;
-$b_recover=($recover/$confirm)*100;
-$b_death=($death/$confirm)*100;
+$_SESSION["b_active"]=($active/$confirm)*100;
+$_SESSION["b_recover"]=($recover/$confirm)*100;
+$_SESSION["b_death"]=($death/$confirm)*100;
+
+$b_active=$_SESSION["b_active"];
+$b_recover=$_SESSION["b_recover"];
+$b_death=$_SESSION["b_death"];
+
+$_SESSION["District"]="TamilNadu";
 
 ?>
 
@@ -37,6 +50,9 @@ $b_death=($death/$confirm)*100;
 <title>User Home</title>
 
 <style>
+body{
+  margin:2% auto auto;
+}
 
 .grid-container {
   display: grid;
@@ -110,7 +126,8 @@ $b_death=($death/$confirm)*100;
 
 <body>
 <main>
-    <p style="text-align:center; font-size:30px;">TAMIL NADU CASES</p>
+<a href="download_img.php" style="float:right; font-size:15px;">Download as jpg</a>
+    <p style="text-align:center; font-size:30px; margin:1% auto 2% 9%;">TAMIL NADU LIVE CASES</p>
     <div style="margin:auto 10% auto 15%;">
         <div class="grid-container">
           <div class="grid-item" style="background-color: #e3b448; border: 1px solid #e3b448;">
