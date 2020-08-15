@@ -126,8 +126,10 @@ body{
 
 <body>
 <main>
-<a href="download_img.php" style="float:right; font-size:15px;">Download as jpg</a>
-    <p style="text-align:center; font-size:30px; margin:1% auto 2% 9%;">TAMIL NADU LIVE CASES</p>
+<nav>
+  <a href="download.php" style="float:right; font-size:18px;">Download</a>
+</nav>
+    <p style="text-align:center; font-size:30px; margin:1% auto 2% 5%;">TAMIL NADU LIVE CASES</p>
     <div style="margin:auto 10% auto 15%;">
         <div class="grid-container">
           <div class="grid-item" style="background-color: #e3b448; border: 1px solid #e3b448;">
