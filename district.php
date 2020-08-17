@@ -136,7 +136,7 @@ body{
 <main>
 
 <div style="margin: auto auto auto 10%;">
-  <a href="download.php" style="float:right; font-size:18px;">Download</a>
+  <a href="download.php" style="float:right; font-size:18px; margin:auto 5%">Download</a>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST">
         <p style="font-size:23px;">Select District</p>
         <select name="dist" id="dist" style="font-size:15px;" required>
