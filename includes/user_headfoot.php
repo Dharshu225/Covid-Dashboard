@@ -37,7 +37,7 @@ include "includes/head_foot.php" ;
         font-size: 20px;
         color: white;
         border-radius: 0 5px 5px 0;
-        background-color: #26a6a6;
+        background-color: #008080;
     }
 
     .mySidenav a:hover 
@@ -46,23 +46,23 @@ include "includes/head_foot.php" ;
     }
 
     #home {
-        top: 210px;
-    }
-
-    #district {
         top: 270px;
     }
 
-    #e_pass {
+    #district {
         top: 330px;
     }
 
-    #profile {
+    #e_pass {
         top: 390px;
     }
 
-    #logout {
+    #profile {
         top: 450px;
+    }
+
+    #logout {
+        top: 510px;
     }
 
 </style>
@@ -72,9 +72,10 @@ include "includes/head_foot.php" ;
 <main>
     <div class="fixed-header">
 		<div class="container">
-			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
+            <img src="includes/images/corona_png.png" style="width:6%; margin:-10px 1% auto 1%; float:left;"></img>
+			<h1 style="color:White; text-align:left; font-size: 40px;">COVID DASHBOARD</h1>
             <navv>
-				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
+				<a style="font-size:18px; float:right; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
             </navv>
 		</div>
     </div>
