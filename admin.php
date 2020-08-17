@@ -102,7 +102,7 @@ if(isset($_POST["delete"]))
 	nav a{
         color: White;
         display: inline-block;
-		margin:5px;
+		margin:10px;
 		float:right;
     }
 
@@ -132,7 +132,8 @@ if(isset($_POST["delete"]))
 <main>
 	<div class="fixed-header">
 		<div class="container">
-			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
+			<img src="includes/images/corona_png.png" style="width:6%; margin:-7px 1% auto 1%; float:left;"></img>
+			<h1 style="color:White; text-align:left; font-size: 40px; margin:10% 1% auto 1%%; ">COVID DASHBOARD</h1>
             <nav>
                 <a style="text-decoration:none;" href="front.php">Logout</a>
 				<a style="text-decoration:none;" href="inactive.php">Inactive Users</a>
