@@ -33,13 +33,6 @@ $_SESSION["success"]="";
 		text-align:center;
     }
 
-	nav a{
-        color: White;
-        display: inline-block;
-		margin:7px;
-		float:right;
-    }
-
 	.contain {
     	padding:10px;
     }
@@ -53,15 +46,9 @@ $_SESSION["success"]="";
 
 <body>
 <main>
-	<div class="fixed-header">
-		<div class="container">
-			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
-            <nav>
-				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
-                <a style="text-decoration:none;" href="edit_profile.php">Edit Profile</a>
-            </nav>
-		</div>
-    </div>
+	<nav>
+		<a href="edit_profile.php" style="float:right; font-size:18px; margin:1% 5% auto;">Edit profile</a>
+	</nav>
 	<p style="color:green; font-size:18px;"><?php echo $_SESSION["success"]; ?></p>
     <div class="whole-contain" style="font-size:18px;">
 		<h1 style="color:Black; text-align:center;">Profile</h1>
