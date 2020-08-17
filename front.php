@@ -215,7 +215,8 @@ span.psw {
 <body>
 
 <header>
-  <h1 style="color:White; text-align: center; font-size: 60px;">COVID DASHBOARD</h1>
+  <img src="includes/images/corona_png.png" style="width:10%; margin:1% 2% auto 2%; float:left;"></img>
+  <h1 style="color:White;font-size: 60px; margin: 3% 25% 5%;">COVID DASHBOARD</h1>
   <buton onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</buton>
 </header>
 <p style="text-align:center; font-size:35px;">COVID-19 INDIA LIVE CASES</p>
