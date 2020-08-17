@@ -131,7 +131,7 @@ hr {
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST">
   <div class="container">
-  <a style="text-decoration:none; float:right;" href="user.php">Cancel</a>
+  <a style="text-decoration:none; float:right;" href="profile.php">Cancel</a>
     <h1 style="text-align:center">Edit Profile</h1>
     <hr>
     
