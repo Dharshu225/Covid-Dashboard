@@ -137,7 +137,8 @@ if(isset($_POST["delete"]))
             <nav>
                 <a style="text-decoration:none;" href="front.php">Logout</a>
 				<a style="text-decoration:none;" href="inactive.php">Inactive Users</a>
-				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome Dharsh!!!"; ?></a>
+				<a style="text-decoration:none;" href="user.php">User Module</a>
+				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
             </nav>
 		</div>
     </div><br>
