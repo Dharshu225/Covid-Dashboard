@@ -97,11 +97,11 @@ nav a{
 
 <body>
 <nav>
-    <a id="btn-Convert-Html2Image" href="#">Download as png</a>
+    <a id="btn-Convert-Html2Image" href="#" style="text-decoration:None;">Download as png</a>
     
-    <a id="pdf" href="#">Download as pdf</a>
+    <a id="pdf" href="#" style="text-decoration:None;">Download as pdf</a>
     
-    <a href="user.php">Back</a> 
+    <a href="user.php" style="text-decoration:None;">Back</a> 
 </nav>
 	<center> 
 	
