@@ -127,7 +127,7 @@ body{
 <body>
 <main>
 <nav>
-  <a href="download.php" style="float:right; font-size:18px; margin:auto 5% auto;">Download</a>
+  <a href="download.php" style="float:right; font-size:18px; margin:auto 5% auto; text-decoration:None;">Download</a>
 </nav>
     <p style="text-align:left; font-size:32px; margin:1% 35% 2%;">TAMIL NADU LIVE CASES</p>
     <div style="margin:auto 10% auto 15%;">
