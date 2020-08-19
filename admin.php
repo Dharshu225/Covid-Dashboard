@@ -135,7 +135,7 @@ if(isset($_POST["delete"]))
 			<img src="includes/images/corona_png.png" style="width:6%; margin:-7px 1% auto 1%; float:left;"></img>
 			<h1 style="color:White; text-align:left; font-size: 40px; margin:10% 1% auto 1%%; ">COVID DASHBOARD</h1>
             <nav>
-                <a style="text-decoration:none;" href="index.php">Logout</a>
+                <a style="text-decoration:none;" href="front.php">Logout</a>
 				<a style="text-decoration:none;" href="inactive.php">Inactive Users</a>
 				<a style="text-decoration:none;" href="user.php">User Module</a>
 				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
