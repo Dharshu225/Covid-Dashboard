@@ -79,7 +79,7 @@ if(isset($_POST["save"]))
 		<div class="container">
 			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
             <nav>
-                <a style="text-decoration:none;" href="front.php">Logout</a>
+                <a style="text-decoration:none;" href="index.php">Logout</a>
 				<a style="text-decoration:none;" href="admin.php">Home</a>
 				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome Dharsh!!!"; ?></a>
             </nav>
