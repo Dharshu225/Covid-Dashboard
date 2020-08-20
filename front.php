@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "covid";
+$servername = "kf3k4aywsrp0d2is.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$username = "gux5fvna6rg9ojtw";
+$password = "ilbs5whcyuonzg09";
+$dbname = "f7j7r4crvmxu0dh9";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
