@@ -50,7 +50,7 @@ $_SESSION["success"]="";
 		<a href="edit_profile.php" style="float:right; font-size:18px; margin:1% 5% auto;">Edit profile</a>
 	</nav>
 	<p style="color:green; font-size:18px;"><?php echo $_SESSION["success"]; ?></p>
-    <div class="whole-contain" style="font-size:18px;">
+    <div class="whole-contain" style="font-size:18px; width:90%;">
 		<h1 style="color:Black; text-align:left;">Profile</h1>
 		<div class="contain" style="float:left; font-weight: bold;">
 			<p>First Name</p>
