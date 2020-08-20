@@ -55,19 +55,19 @@ include "includes/head_foot.php" ;
     }
 
     #district {
-        top: 330px;
+        top: 340px;
     }
 
     #e_pass {
-        top: 390px;
+        top: 410px;
     }
 
     #profile {
-        top: 450px;
+        top: 480px;
     }
 
     #logout {
-        top: 510px;
+        top: 550px;
     }
 
 </style>
