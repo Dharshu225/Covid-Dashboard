@@ -34,10 +34,10 @@ include "includes/head_foot.php" ;
     .mySidenav a 
     {
         position: fixed;
-        left: -125px;
+        left: -135px;
         transition: 0.3s;
         padding: 15px;
-        width: 150px;
+        width: 170px;
         text-decoration: none;
         font-size: 20px;
         color: white;
