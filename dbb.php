@@ -2,7 +2,7 @@
 define('DB_SERVER','kf3k4aywsrp0d2is.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');
 define('DB_USERNAME','gux5fvna6rg9ojtw');
 define('DB_PASSWORD','ilbs5whcyuonzg09');
-define('DB_NAME','covid');
+define('DB_NAME','f7j7r4crvmxu0dh9');
 
 class dbb
 {
