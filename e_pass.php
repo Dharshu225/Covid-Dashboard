@@ -150,9 +150,9 @@ if(isset($_POST["submit"]))
 
 <body>
 <main>
-<h2 style="font-size:30px; text-align:center;">E-pass Registration</h2>
+<h2 style="font-size:30px; text-align:left; margin:2% 13% 2%;">E-pass Registration</h2>
         <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST">
-        <div class="whole_container" style="margin:auto auto auto;">
+        <div class="whole_container" style="margin:auto 13% auto; float:left;">
             <div class="contain" style="float:left;">
                 <label for="from" style="font-size:20px;">From</label><br><br>
                     <select name="from" id="from" style="font-size:15px;" required>
