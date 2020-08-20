@@ -27,7 +27,7 @@ $recover=$obj["recovered"];
 
 if(isset($_POST["submit"])) 
 {
-	$name=$_POST["name"];
+  $name=$_POST["name"];
   $psw=$_POST["psw"];
   $sql="SELECT email,first_name,passwordd,mobile FROM user WHERE email='$name'";
   $result=mysqli_query($conn, $sql);
@@ -36,7 +36,7 @@ if(isset($_POST["submit"]))
   $_SESSION["name"] = $row["first_name"];
   $_SESSION["mobile"]=$row["mobile"];
 	
-	if($name == "dharsh@gmail.com" && $psw == "12345")
+	if($name == "dharsh@gmail.com" && $psw == "Dharsh@225")
     {
       header("location:admin.php");
     }
