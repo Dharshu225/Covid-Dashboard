@@ -135,7 +135,7 @@ body{
 <body>
 <main>
 
-<div style="margin: auto auto auto 10%;">
+<div style="margin: auto auto auto 13%;">
   <a href="download.php" style="float:right; font-size:18px; margin:auto 5%; text-decoration:None;">Download</a>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST">
         <p style="font-size:23px;">Select District</p>
@@ -182,7 +182,7 @@ body{
     </form>
 </div>
     <p style="text-align:center; font-size:35px;"><?php echo $dist ?> Cases</p>
-    <div style="margin:auto 5% auto 10%;">
+    <div style="margin:auto 10% auto 13%;">
         <div class="grid-container">
             <div class="grid-item" style="background-color: #e3b448; border: 1px solid #e3b448;">
                 <p>Total</p>
