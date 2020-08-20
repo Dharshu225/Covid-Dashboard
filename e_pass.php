@@ -134,7 +134,7 @@ if(isset($_POST["submit"]))
     }
 
     .contain {
-    padding:10px;
+    padding:1px;
     }
 
     .contain select{
