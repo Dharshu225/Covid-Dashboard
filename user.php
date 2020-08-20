@@ -129,7 +129,7 @@ body{
 <nav>
   <a href="download.php" style="float:right; font-size:18px; margin:auto 5% auto; text-decoration:None;">Download</a>
 </nav>
-    <p style="text-align:left; font-size:32px; margin:1% 13% 2%;">TAMIL NADU LIVE CASES</p>
+    <p style="text-align:left; font-size:32px; margin:1% 15% 2%;">TAMIL NADU LIVE CASES</p>
     <div style="margin:auto 10% auto 15%;">
         <div class="grid-container">
           <div class="grid-item" style="background-color: #e3b448; border: 1px solid #e3b448;">
