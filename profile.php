@@ -34,7 +34,7 @@ $_SESSION["success"]="";
     }
 
 	.contain {
-    	padding:10px;
+    	padding:1px;
     }
 
 	.whole-contain{
