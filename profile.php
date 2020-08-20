@@ -38,7 +38,7 @@ $_SESSION["success"]="";
     }
 
 	.whole-contain{
-		margin: auto 25% 5%; 
+		margin: auto 13% 5%; 
 	}
 
 </style>
@@ -51,8 +51,8 @@ $_SESSION["success"]="";
 	</nav>
 	<p style="color:green; font-size:18px;"><?php echo $_SESSION["success"]; ?></p>
     <div class="whole-contain" style="font-size:18px;">
-		<h1 style="color:Black; text-align:center;">Profile</h1>
-		<div class="contain" style="float:left; font-weight: bold; margin:auto auto auto 8%">
+		<h1 style="color:Black; text-align:left;">Profile</h1>
+		<div class="contain" style="float:left; font-weight: bold;">
 			<p>First Name</p>
 			<p>Last Name</p>
 			<p>Aadhar Number</p>
@@ -73,7 +73,7 @@ $_SESSION["success"]="";
 			<p>Last e-pass Declined date</p>
 			<p>Last Travel</p>
 		</div>
-		<div class="contain" style="float:right; margin:auto 15% auto auto;">
+		<div class="contain" style="float:right; margin:auto 55% auto auto;">
 			<p><?php echo ": ".$row["first_name"] ?></p>
 			<p><?php echo ": ".$row["last_name"] ?></p>
 			<p><?php echo ": ".$row["aadhar"] ?></p>
