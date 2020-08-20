@@ -38,7 +38,7 @@ $_SESSION["success"]="";
     }
 
 	.whole-contain{
-		margin: auto 13% 5%; 
+		margin: auto auto 5% 13%; 
 	}
 
 </style>
