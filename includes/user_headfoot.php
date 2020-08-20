@@ -51,23 +51,23 @@ include "includes/head_foot.php" ;
     }
 
     #home {
-        top: 270px;
+        top: 260px;
     }
 
     #district {
-        top: 340px;
+        top: 320px;
     }
 
     #e_pass {
-        top: 410px;
+        top: 380px;
     }
 
     #profile {
-        top: 480px;
+        top: 440px;
     }
 
     #logout {
-        top: 550px;
+        top: 500px;
     }
 
 </style>
