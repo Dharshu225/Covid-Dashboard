@@ -27,7 +27,7 @@ $row = mysqli_fetch_assoc($result);
 <style>
 
 	body{
-		padding-top: 115px;
+		padding-top: 120px;
 	}
 
 	.container{
@@ -37,18 +37,16 @@ $row = mysqli_fetch_assoc($result);
 	nav a{
         color: White;
         display: inline-block;
-		margin:5px;
+		margin:8px;
 		float:right;
     }
 
 	.contain {
-    	padding:10px;
+    	padding:1px;
     }
 
 	.whole-contain{
-		border:2px solid black;
-		background-color:#fc2d61;
-		margin: 1% 30% 5%; 
+		margin: auto 13% 5%; 
 	}
     
 </style>
@@ -58,16 +56,17 @@ $row = mysqli_fetch_assoc($result);
 <main>
 	<div class="fixed-header">
 		<div class="container">
-			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
+			<img src="includes/images/corona_png.png" style="width:6%; margin:-10px 1% auto 1%; float:left;"></img>
+			<h1 style="color:White; text-align:left; font-size: 40px;">COVID DASHBOARD</h1>
             <nav>
-				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
-                <a style="text-decoration:none;" href="user.php">Back</a>
+				<a style="text-decoration:none;" href="user.php">Back</a>
+				<a style="font-size:18px; color:white"><?php echo "Welcome " .$_SESSION["name"]. "!!!"; ?></a>
             </nav>
 		</div>
     </div><br>
     <div class="whole-contain" style="font-size:18px;">
-		<h1 style="color:Black; text-align:center; color:white;">Decision</h1>
-		<div class="contain" style="float:left; font-weight: bold; margin:auto auto auto 8%">
+		<h1 style="text-align:left;">Decision</h1>
+		<div class="contain" style="float:left; font-weight: bold;">
 			<p>Application Number</p>
 			<p>Status of E-pass</p>
 			<p>First Name</p>
@@ -90,7 +89,7 @@ $row = mysqli_fetch_assoc($result);
 			<p>Date</p>
 			<p><?php if($_SESSION["provide"]==1){echo "Valid Till";} ?></p>
 		</div>
-		<div class="contain" style="float:right; margin:auto 7% auto auto;">
+		<div class="contain" style="float:right; margin:auto 55% auto auto;">
 			<p><?php echo ": ".$row["aadhar"] ?></p>
 			<p><?php if($_SESSION["provide"]==1) {echo ": E-pass is Provided";} else{echo ": E-pass is Declined";} ?></p>
 			<p><?php echo ": ".$row["first_name"] ?></p>
