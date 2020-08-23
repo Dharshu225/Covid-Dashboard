@@ -48,7 +48,6 @@ $_SESSION["District"]="TamilNadu";
 <meta charset="utf-8" content="width=device-width">
 
 <title>User Home</title>
-<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 body{
