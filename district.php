@@ -57,7 +57,6 @@ if(isset($_POST["Submit"]))
 <meta charset="utf-8" content="width=device-width">
 
 <title>District-Wise Cases</title>
-<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
     
 <style>
 
