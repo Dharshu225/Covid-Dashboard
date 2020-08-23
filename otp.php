@@ -42,7 +42,6 @@ else
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>OTP Authentication</title>
-<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 body {font-family: Times New Roman, Times, serif;}
