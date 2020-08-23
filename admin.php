@@ -88,6 +88,7 @@ if(isset($_POST["delete"]))
 <meta charset="utf-8" content="width=device-width">
 
 <title>Admin</title>
+<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 
