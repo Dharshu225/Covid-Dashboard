@@ -23,6 +23,7 @@ $row = mysqli_fetch_assoc($result);
 <meta charset="utf-8" content="width=device-width">
 
 <title>Decision</title>
+<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 
