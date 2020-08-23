@@ -71,7 +71,8 @@ if(isset($_POST["cancel"]))
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Edit Profile</title>
-
+<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
+	
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
