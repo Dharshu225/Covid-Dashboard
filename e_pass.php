@@ -125,6 +125,7 @@ if(isset($_POST["submit"]))
 <meta charset="utf-8" content="width=device-width">
 
 <title>E-pass Registration</title>
+<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 
