@@ -40,7 +40,8 @@ if(isset($_POST["delete"]))
 <head>
 <meta charset="utf-8" content="width=device-width">
 
-<title>Admin</title>
+<title>Search</title>
+<link rel="shortcut icon" href="includes/images/corona_icon.jpeg" type="image/x-icon">
 
 <style>
 
