@@ -98,7 +98,7 @@ nav a{
 
 <body>
 <nav>
-    <a id="btn-Convert-Html2Image" href="#" style="text-decoration:None;">Download as png</a>
+    <a id="btn-Convert-Html2Image" href="#" style="text-decoration:None;">Download as image</a>
     
     <a id="pdf" href="#" style="text-decoration:None;">Download as pdf</a>
     
@@ -194,7 +194,7 @@ nav a{
                     /^data:image\/png/, "data:application/octet-stream"); 
                 
                     $("#btn-Convert-Html2Image").attr( 
-                    "download", "CovidDashboard.png").attr( 
+                    "download", "CovidDashboard.jpg").attr( 
                     "href", newData); 
                 }); 
             }); 
