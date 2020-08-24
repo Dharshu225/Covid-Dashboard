@@ -181,7 +181,7 @@ body{
             <input style="font-size:15px;" type="submit" value="Go" name="Submit">
     </form>
 </div>
-    <p style="text-align:left; font-size:32px; margin:2% 13% 2%;"><?php echo $dist ?> Live Cases</p>
+    <p style="text-align:center; font-size:32px;"><?php echo $dist ?> Live Cases</p>
     <div style="margin:auto 10% auto 13%;">
         <div class="grid-container">
             <div class="grid-item" style="background-color: #e3b448; border: 1px solid #e3b448;">
