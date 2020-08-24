@@ -46,9 +46,9 @@ if(isset($_POST["save"]))
     }
 
 	nav a{
-        color: White;
-        display: inline-block;
-		margin:5px;
+		color: White;
+		display: inline-block;
+		margin:10px;
 		float:right;
     }
 
