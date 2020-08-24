@@ -78,7 +78,8 @@ if(isset($_POST["save"]))
 <main>
 	<div class="fixed-header">
 		<div class="container">
-			<h1 style="color:White; text-align:center; font-size: 40px;">COVID DASHBOARD</h1>
+			<img src="includes/images/corona_png.png" style="width:6%; margin:-7px 1% auto 1%; float:left;"></img>
+			<h1 style="color:White; text-align:left; font-size: 40px; margin:10% 1% auto 1%%; ">COVID DASHBOARD</h1>
             <nav>
                 <a style="text-decoration:none;" href="front.php">Logout</a>
 				<a style="text-decoration:none;" href="admin.php">Home</a>
@@ -86,7 +87,7 @@ if(isset($_POST["save"]))
             </nav>
 		</div>
     </div><br>
-	<h1 style="color:Black; text-align:center;">Inactive User Database</h1>
+	<h1 style="color:Black; text-align:left; margin:2% 13% auto;">Inactive User Database</h1>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST" >
 		<div style="float:right; margin:auto 5% auto auto;">
 			<input type="text" placeholder="Enter Aadhar Number" name="aadhar"></input>
