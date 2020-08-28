@@ -81,7 +81,6 @@ if(isset($_POST["save"]))
 			<img src="includes/images/corona_png.png" style="width:6%; margin:-7px 1% auto 1%; float:left;"></img>
 			<h1 style="color:White; text-align:left; font-size: 40px; margin:10% 1% auto 1%%; ">COVID DASHBOARD</h1>
             <nav>
-                <a style="text-decoration:none;" href="front.php">Logout</a>
 				<a style="text-decoration:none;" href="admin.php">Home</a>
 				<a style="float:left; font-size:18px; float:left; color:white"><?php echo "Welcome Dharsh!!!"; ?></a>
             </nav>
