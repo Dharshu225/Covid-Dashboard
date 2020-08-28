@@ -89,7 +89,7 @@ include "includes/head_foot.php" ;
         <a href="district.php" id="district">View District</a>
         <a href="e_pass.php" id="e_pass">E_pass</a>
         <a href="profile.php" id="profile">Profile</a>
-        <a href="front.php" id="logout">Logout</a>
+        <a href="index.php" id="logout">Logout</a>
     </div>
 </main>
 </body>
