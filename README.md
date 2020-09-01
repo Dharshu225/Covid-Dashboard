@@ -5,4 +5,4 @@ Technologies used
 
 Front-end : HTML,CSS,Bootstrap,Javascript    
 Middleware : PHP    
-Database : MySql
+Database : MySQL
