@@ -142,16 +142,16 @@ if(isset($_POST["delete"]))
             </nav>
 		</div>
     </div><br>
-	<h1 style="color:Black; text-align:left; margin:2% 13% auto;">User Database</h1>
+	<h1 style="color:Black; position:fixed; text-align:left; margin:30px 13% auto;">User Database</h1>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST" >
-		<div style="float:right; margin:auto 5% auto auto;">
+		<div style=" position:fixed; margin:3% 5% auto 75%;">
 			<input type="text" placeholder="Enter Aadhar Number" name="aadhar"></input>
 			<input style="font-size:15px;" type="submit" value="Go" name="save">
 			<p id="user_check" style="color:red; font-size:20px; text-align:center"><?php echo $user_check; ?></p>
 		</div>
     </form>
 	<p id="user_check" style="color:green; font-size:20px; margin: auto auto auto 5%;"><?php echo $user_delete; ?></p>
-    <div class="container" style="text-align:center; width:175%;">
+    <div class="container" style="text-align:center; width:175%; margin: 6% 10px;">
     	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST" >
 		<table id="userdata" border="1" style="font-family: verdana; font-size:14px; margin: 1px 15px 1px 10px;" >
 			<tr>
