@@ -142,7 +142,7 @@ if(isset($_POST["delete"]))
             </nav>
 		</div>
     </div><br>
-	<h1 style="color:Black; position:fixed; text-align:left; margin:30px 13% auto;">User Database</h1>
+	<h1 style="color:Black; position:fixed; text-align:left; margin:30px 12% auto;">User Database</h1>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "POST" >
 		<div style=" position:fixed; margin:3% 5% auto 75%;">
 			<input type="text" placeholder="Enter Aadhar Number" name="aadhar"></input>
