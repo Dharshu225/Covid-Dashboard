@@ -12,18 +12,22 @@ $psw="";
 $pswError="";
 $_SESSION["register"]="";
 
-$json=file_get_contents("https://api.covidindiatracker.com/total.json");
 $active=0;
 $confirm=0;
 $death=0;
 $recover=0;
 
+$json=file_get_contents("https://api.covid19india.org/state_district_wise.json");
 $obj = json_decode($json,true);
-
-$active=$obj["active"];
-$confirm=$obj["confirmed"];
-$death=$obj["deaths"];
-$recover=$obj["recovered"];
+foreach($obj as $t1){
+  $t2=$t1["districtData"];
+    foreach($t2 as $key){
+      $active+=$key["active"];
+      $confirm+=$key["confirmed"];
+      $death+=$key["deceased"];
+      $recover+=$key["recovered"];
+    }
+}
 
 if(isset($_POST["submit"])) 
 {
