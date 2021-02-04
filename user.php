@@ -10,16 +10,16 @@ $recover=0;
 $a_active=0;
 $a_recover=0;
 
-$json=file_get_contents("https://api.covidindiatracker.com/state_data.json");
+$json=file_get_contents("https://api.covid19india.org/state_district_wise.json");
 $obj = json_decode($json,true);
-foreach($obj as $key){
-    if($key["state"]=="Tamil Nadu"){
-      $_SESSION["active"]=$key["active"];
-      $_SESSION["confirm"]=$key["confirmed"];
-      $_SESSION["death"]=$key["deaths"];
-      $_SESSION["recover"]=$key["recovered"];
-    }
+$state=$obj["Tamil Nadu"]["districtData"];
+foreach($state as $key){
+  $_SESSION["active"]+=$key["active"];
+  $_SESSION["confirm"]+=$key["confirmed"];
+  $_SESSION["death"]+=$key["deceased"];
+  $_SESSION["recover"]+=$key["recovered"];
 }
+
 $active=$_SESSION["active"];
 $confirm=$_SESSION["confirm"];
 $death=$_SESSION["death"];
