@@ -79,7 +79,6 @@ $dist=$_SESSION["District"];
   padding-top: 10px;
   padding-bottom: 10px;
   padding:19px;
-  float:left;
 }
 
 .active {width: <?php echo $b_active.'%' ?>; background-color: #F14D49;}
